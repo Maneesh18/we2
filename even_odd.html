@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrow Function</h2>
+
+<p>enter a value to compute the even or odd</p>
+    <label for="fname">number :</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <button onclick="fact()">factorial</button>
+
+<p id="demo"></p>
+
+<script>
+function fact(){
+var val=document.getElementById("fname").value;
+document.getElementById("demo").innerHTML = f(val).toString();
+}
+var f = (val) => {
+    if (val%2 == 0 ){
+        return "EVEN";
+    }
+    else {
+        return "ODD";
+    }
+}
+</script>
+
+</body>
+</html>

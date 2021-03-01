@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Class</h2>
+<p>How to use a JavaScript Class.</p>
+<p id="demo"></p>
+
+<script>
+class Student {
+  constructor (name, id, mail, s1, s2, s3){
+    this.name = name;
+    this.id = id;
+    this.mail=mail;
+    this.s1=s1;
+    this.s2=s2;
+    this.s3=s3;
+  }
+}
+
+p1 = new Student("Maneesh", "5k9", "maneesh@gmail.com", 18, 20 ,18);
+document.getElementById("demo").innerHTML =
+" ......."+p1.name + " " + p1.id + " "+p1.mail+" "+p1.s1+" "+p1.s2+" "+p1.s3+" ......";
+</script>
+
+</body>
+</html>
